@@ -33,26 +33,12 @@ This is a full-stack user authentication application built with React, TypeScrip
 
 ## Project Structure
 
-```
-user-auth-app/
-├── client/                 # Frontend (Vite + React)
-│   ├── public/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── App.tsx
-│   │   ├── main.tsx
-│   │   └── index.css
-│   └── ...
-└── server/                 # Backend (Node.js + Express + MongoDB)
-    ├── src/
-    │   ├── controllers/
-    │   ├── middleware/
-    │   ├── routes/
-    │   ├── models/
-    │   └── index.ts
-    └── ...
-```
+The project is divided into two main parts:
+
+- `client/` – The frontend application built with React, TypeScript, Vite, and Tailwind CSS.
+- `server/` – The backend API built with Node.js, Express, TypeScript, and MongoDB.
+
+Each part is organized following standard conventions for maintainability and clarity.
 
 ## Getting Started
 
@@ -95,3 +81,6 @@ JWT_SECRET=jwt_secret_key
 - Client requests use `withCredentials: true` to maintain sessions.
 - The backend uses CORS configuration to allow credentials from the client domain.
 
+## Author
+
+- Bojan Ilic – [GitHub Profile](https://github.com/bojan-ilic)
