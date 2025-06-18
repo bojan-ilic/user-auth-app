@@ -1,0 +1,31 @@
+### REGISTER
+# Creates a new user and sets an HTTP-only cookie with a JWT
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+	"firstName":"Bojan",
+	"lastName":"Ilic",
+	"email":"bojan@example.com",
+	"password":"test1234"
+}
+
+### LOGIN
+# Authenticates user and sets JWT cookie
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+	"email":"bojan@example.com",
+	"password":"test1234"
+}
+
+### GET CURRENT USER
+# Returns the currently logged-in user based on the token cookie
+GET http://localhost:5000/api/auth/current-user
+Content-Type: application/json
+
+### LOGOUT
+# Clears the token cookie and logs out the user
+POST http://localhost:5000/api/auth/logout
+Content-Type: application/json
